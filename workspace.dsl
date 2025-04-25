@@ -9,14 +9,15 @@ workspace {
             description "GeoQuest system architecture."
             
             # Frontend Clients
-            webClient = container "Blazor WebAssembly" {
+            webClient = container "WebAssembly" {
                 description "Web client for administration and map viewing."
-                technology "WebAssembly"
-            }
+                technology "WebAssembly c#"
+                tags "Future"
+            } 
 
             hybridClient = container "MAUI" {
                 description "Alternative for hybrid app."
-                technology "MAUI"
+                technology "MAUI c#"
             }
 
             # API Gateway
@@ -178,11 +179,15 @@ workspace {
         }
 
         # User interactions
-        user -> webClient "Uses"
+        user -> webClient "Uses"{
+            tags "Future"
+        }
         user -> hybridClient "Uses"
 
         # UI to API Gateway interactions
-        webClient -> apiGateway "Communicates with"
+        webClient -> apiGateway "Communicates with"{
+            tags "Future"
+        }
         hybridClient -> apiGateway "Communicates with"
 
         # API Gateway to Microservices
@@ -282,5 +287,21 @@ workspace {
         }
 
         theme default
+
+        styles {
+            element "Future" {
+                background "#ffffff"
+                color "#cccccc"
+                border "Dashed"
+                opacity 40
+            }
+            relationship "Future" {
+                color "#cccccc"
+                style "Dashed"
+                opacity 40
+            }
+        }
     }
+
+    
 }
