@@ -176,6 +176,27 @@ workspace {
                     technology "PostgreSQL"
                 }
             }
+
+            feedService = container "FeedService" {
+                description "Aggregates activity feed entries based on events from other services."
+                technology "Microservice"
+
+                feedApi = component "Feed API" {
+                    description "REST API for retrieving personalized or global feed."
+                    technology "ASP.NET Core Web API"
+                }
+
+                feedDatabase = component "Feed Database" {
+                    description "Stores precomputed feed entries based on system events."
+                    technology "PostgreSQL"
+                }
+            }
+
+            messageBus = container "Message Bus" {
+                description "Asynchronous communication infrastructure for events between services (e.g., Kafka, Azure Service Bus, RabbitMQ)."
+                technology "Kafka / RabbitMQ / Azure Service Bus"
+            }
+
         }
 
         # User interactions
@@ -201,6 +222,7 @@ workspace {
         apiGateway -> userApi "Routes to"
         apiGateway -> mediaApi "Routes to"
         apiGateway -> leaderboardApi "Routes to"
+        apiGateway -> feedApi "Routes to"
 
         # API to Database/Storage interactions
         gameApi -> gameDatabase "Stores and retrieves data from"
@@ -213,6 +235,15 @@ workspace {
         userApi -> userDatabase "Stores and retrieves data from"
         mediaApi -> mediaStorage "Stores and retrieves data from"
         leaderboardApi -> leaderboardDatabase "Stores and retrieves data from"
+        feedApi -> feedDatabase "Stores and retrieves data from"
+
+        # Tjenester som publiserer events
+        challengeApi -> messageBus "Publishes events to/Consume from"
+        gameApi -> messageBus "Publishes events to/Consume from"
+        userApi -> messageBus "Publishes events to/Consume from"
+        scoringApi -> messageBus "Publishes events to/Consume from"
+        teamApi -> messageBus "Publishes events to/Consume from" 
+
     }
 
     views {
