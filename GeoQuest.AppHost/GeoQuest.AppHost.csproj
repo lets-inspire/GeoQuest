@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.3.0" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>c1596446-d8c1-41ae-a418-bad5f5f0d311</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GeoQuest.ChatService\GeoQuest.ChatService.csproj" />
+    <ProjectReference Include="..\GeoQuest.FeedService\GeoQuest.FeedService.csproj" />
+    <ProjectReference Include="..\GeoQuest.GameChallengeService\GeoQuest.GameChallengeService.csproj" />
+    <ProjectReference Include="..\GeoQuest.LeaderboardService\GeoQuest.LeaderBoardService.csproj" />
+    <ProjectReference Include="..\GeoQuest.LocationService\GeoQuest.LocationService.csproj" />
+    <ProjectReference Include="..\GeoQuest.MediaService\GeoQuest.MediaService.csproj" />
+    <ProjectReference Include="..\GeoQuest.NotificationService\GeoQuest.NotificationService.csproj" />
+    <ProjectReference Include="..\GeoQuest.ScoringService\GeoQuest.ScoringService.csproj" />
+    <ProjectReference Include="..\GeoQuest.TeamService\GeoQuest.TeamService.csproj" />
+    <ProjectReference Include="..\GeoQuest.UserService\GeoQuest.UserService.csproj" />
+    <ProjectReference Include="..\GeoQuest.Web\GeoQuest.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.0" />
+    <PackageReference Include="Aspire.Hosting.Azure.Storage" Version="9.3.0" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="9.3.0" />
+    <PackageReference Include="Aspire.Hosting.RabbitMQ" Version="9.3.0" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="9.3.0" />
+  </ItemGroup>
+
+</Project>

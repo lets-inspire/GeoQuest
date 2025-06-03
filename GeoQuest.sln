@@ -1,0 +1,102 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.AppHost", "GeoQuest.AppHost\GeoQuest.AppHost.csproj", "{0376EFB8-1EC6-4A55-9313-2C8615A00611}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.ServiceDefaults", "GeoQuest.ServiceDefaults\GeoQuest.ServiceDefaults.csproj", "{BF411B97-3DC3-94C1-4A60-DDE315721D77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.Web", "GeoQuest.Web\GeoQuest.Web.csproj", "{36DD8B11-EFFB-050D-4AAB-1D11F2F0F255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.FeedService", "GeoQuest.FeedService\GeoQuest.FeedService.csproj", "{7C9DC013-B64A-87CA-5805-4FA331557FD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.ChatService", "GeoQuest.ChatService\GeoQuest.ChatService.csproj", "{553F7BD1-D5A4-501E-0297-4C4B85624A3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.LeaderBoardService", "GeoQuest.LeaderboardService\GeoQuest.LeaderBoardService.csproj", "{78AB792E-99F4-FA74-50CF-3BAEC2B0A5D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.LocationService", "GeoQuest.LocationService\GeoQuest.LocationService.csproj", "{D6C69DAA-72BA-AD2B-348D-BBF4B37392EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.MediaService", "GeoQuest.MediaService\GeoQuest.MediaService.csproj", "{40AD0309-06A6-99C3-853D-F7CE87C7E34A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.NotificationService", "GeoQuest.NotificationService\GeoQuest.NotificationService.csproj", "{2820B81D-9A08-65DB-9491-131594C62B9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.ScoringService", "GeoQuest.ScoringService\GeoQuest.ScoringService.csproj", "{2E5643C6-2F70-4B6A-C2A4-F95635AE6236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.TeamService", "GeoQuest.TeamService\GeoQuest.TeamService.csproj", "{19EB463C-78A0-3B35-25F9-8FD068671C56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.UserService", "GeoQuest.UserService\GeoQuest.UserService.csproj", "{8B64CA01-495B-F4A5-048E-7F62C4578038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.GameChallengeService", "GeoQuest.GameChallengeService\GeoQuest.GameChallengeService.csproj", "{137A87F6-65D9-875A-DD79-C56255D6643C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoQuest.Tests", "GeoQuest.Tests\GeoQuest.Tests.csproj", "{0CE89D4F-56E3-6B45-5150-614434897C99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0376EFB8-1EC6-4A55-9313-2C8615A00611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0376EFB8-1EC6-4A55-9313-2C8615A00611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0376EFB8-1EC6-4A55-9313-2C8615A00611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0376EFB8-1EC6-4A55-9313-2C8615A00611}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF411B97-3DC3-94C1-4A60-DDE315721D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF411B97-3DC3-94C1-4A60-DDE315721D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF411B97-3DC3-94C1-4A60-DDE315721D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF411B97-3DC3-94C1-4A60-DDE315721D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36DD8B11-EFFB-050D-4AAB-1D11F2F0F255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36DD8B11-EFFB-050D-4AAB-1D11F2F0F255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36DD8B11-EFFB-050D-4AAB-1D11F2F0F255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36DD8B11-EFFB-050D-4AAB-1D11F2F0F255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C9DC013-B64A-87CA-5805-4FA331557FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9DC013-B64A-87CA-5805-4FA331557FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9DC013-B64A-87CA-5805-4FA331557FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9DC013-B64A-87CA-5805-4FA331557FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{553F7BD1-D5A4-501E-0297-4C4B85624A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553F7BD1-D5A4-501E-0297-4C4B85624A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553F7BD1-D5A4-501E-0297-4C4B85624A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{553F7BD1-D5A4-501E-0297-4C4B85624A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78AB792E-99F4-FA74-50CF-3BAEC2B0A5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78AB792E-99F4-FA74-50CF-3BAEC2B0A5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78AB792E-99F4-FA74-50CF-3BAEC2B0A5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78AB792E-99F4-FA74-50CF-3BAEC2B0A5D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C69DAA-72BA-AD2B-348D-BBF4B37392EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C69DAA-72BA-AD2B-348D-BBF4B37392EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C69DAA-72BA-AD2B-348D-BBF4B37392EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C69DAA-72BA-AD2B-348D-BBF4B37392EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40AD0309-06A6-99C3-853D-F7CE87C7E34A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40AD0309-06A6-99C3-853D-F7CE87C7E34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40AD0309-06A6-99C3-853D-F7CE87C7E34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40AD0309-06A6-99C3-853D-F7CE87C7E34A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2820B81D-9A08-65DB-9491-131594C62B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2820B81D-9A08-65DB-9491-131594C62B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2820B81D-9A08-65DB-9491-131594C62B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2820B81D-9A08-65DB-9491-131594C62B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E5643C6-2F70-4B6A-C2A4-F95635AE6236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E5643C6-2F70-4B6A-C2A4-F95635AE6236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E5643C6-2F70-4B6A-C2A4-F95635AE6236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E5643C6-2F70-4B6A-C2A4-F95635AE6236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19EB463C-78A0-3B35-25F9-8FD068671C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19EB463C-78A0-3B35-25F9-8FD068671C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19EB463C-78A0-3B35-25F9-8FD068671C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19EB463C-78A0-3B35-25F9-8FD068671C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B64CA01-495B-F4A5-048E-7F62C4578038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B64CA01-495B-F4A5-048E-7F62C4578038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B64CA01-495B-F4A5-048E-7F62C4578038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B64CA01-495B-F4A5-048E-7F62C4578038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{137A87F6-65D9-875A-DD79-C56255D6643C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{137A87F6-65D9-875A-DD79-C56255D6643C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{137A87F6-65D9-875A-DD79-C56255D6643C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{137A87F6-65D9-875A-DD79-C56255D6643C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CE89D4F-56E3-6B45-5150-614434897C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE89D4F-56E3-6B45-5150-614434897C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE89D4F-56E3-6B45-5150-614434897C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE89D4F-56E3-6B45-5150-614434897C99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7071082E-EA7E-4C02-8D98-FD327F54F7E8}
+	EndGlobalSection
+EndGlobal
